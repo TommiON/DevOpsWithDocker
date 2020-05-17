@@ -1,0 +1,10 @@
+Script started on Sun May 17 18:15:37 2020
+[?1034hbash-3.2$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS                          PORTS               NAMES
+99a08b0a98bf        nginx               "nginx -g 'daemon of…"   About a minute ago   Exited (0) About a minute ago                       ecstatic_cray
+c73bc489dc14        nginx               "nginx -g 'daemon of…"   About a minute ago   Exited (0) 50 seconds ago                           pedantic_haslett
+dd3c2a1e256b        nginx               "nginx -g 'daemon of…"   About a minute ago   Up About a minute               80/tcp              trusting_austin
+bash-3.2$ exit
+exit
+
+Script done on Sun May 17 18:15:47 2020
