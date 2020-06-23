@@ -1,0 +1,35 @@
+Script started on Tue Jun 23 22:46:26 2020
+[?1034hbash-3.2$ docker pull devopsdockeruh/exec_bash_exercise
+Using default tag: latest
+latest: Pulling from devopsdockeruh/exec_bash_exercise
+Digest: sha256:d38b6f6b0eed2880e25c9eb7f83f1cd016ffe3a56c9a3fec6e7bee480bf1ed0f
+Status: Image is up to date for devopsdockeruh/exec_bash_exercise:latest
+docker.io/devopsdockeruh/exec_bash_exercise:latest
+bash-3.2$ docker images
+REPOSITORY                          TAG                 IMAGE ID            CREATED             SIZE
+devopsdockeruh/exec_bash_exercise   latest              c52ece77379e        2 weeks ago         942MB
+bash-3.2$ docker run -d devopsdockeruh/exec_bash_exercise
+5eaa3f83fef6b28bd303dca8f8499d5a2d1670967726b65f1406e26385e0a724
+bash-3.2$ docker container ls
+CONTAINER ID        IMAGE                               COMMAND                  CREATED             STATUS              PORTS               NAMES
+5eaa3f83fef6        devopsdockeruh/exec_bash_exercise   "docker-entrypoint.s…"   7 seconds ago       Up 6 seconds                            bold_ganguly
+bash-3.2$ docker exec -it 5eaa3f83fef6 bash
+root@5eaa3f83fef6:/usr/app# [Kroot@5eaa3f83fef6:/usr/app# tail -f ./logs.txt
+"Docker is easy"
+Tue, 23 Jun 2020 19:48:55 GMT
+Tue, 23 Jun 2020 19:48:58 GMT
+Tue, 23 Jun 2020 19:49:01 GMT
+Tue, 23 Jun 2020 19:49:04 GMT
+Secret message is:
+"Docker is easy"
+Tue, 23 Jun 2020 19:49:10 GMT
+Tue, 23 Jun 2020 19:49:13 GMT
+Tue, 23 Jun 2020 19:49:16 GMT
+Tue, 23 Jun 2020 19:49:19 GMT
+^C
+root@5eaa3f83fef6:/usr/app# exit
+exit
+bash-3.2$ exit
+exit
+
+Script done on Tue Jun 23 22:49:27 2020
