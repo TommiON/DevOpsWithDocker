@@ -1,0 +1,8 @@
+PROCESS STARTED WITH:
+
+docker exec -it bfaabded317a sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+
+COMMANDS IN THE CONTAINER BEFOREHAND:
+
+apt update && apt upgrade
+apt install curl
