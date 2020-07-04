@@ -1,0 +1,23 @@
+Script started on Sat Jul  4 14:50:16 2020
+[?1034hbash-3.2$ doce[Kker build -t docker-clock .
+Sending build context to Docker daemon  3.072kB
+Step 1/3 : FROM devopsdockeruh/overwrite_cmd_exercise
+ ---> 3d2b622b1849
+Step 2/3 : WORKDIR /workdir
+ ---> Running in a9343ba8db2d
+Removing intermediate container a9343ba8db2d
+ ---> fc93e0afe29c
+Step 3/3 : CMD ["ls -a"]
+ ---> Running in ee5cf66430f5
+Removing intermediate container ee5cf66430f5
+ ---> 1e97b05a9fa9
+Successfully built 1e97b05a9fa9
+Successfully tagged docker-clock:latest
+bash-3.2$ docker rn [K[Kun docker-clock
+
+-h,       	--help           	to show this message
+-a [age], 	--adult [age]    	to check if you're older than 18
+-c [time],	--clock [time]   	to start a clock
+-t [size],	--triangle [size]	to draw a triangle, takes second argument as the size
+    
+bash-3.2$ docker run docker-clock -c 0
