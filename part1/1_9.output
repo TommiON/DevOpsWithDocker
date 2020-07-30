@@ -1,0 +1,2 @@
+docker pull devopsdockeruh/ports_exercise
+docker run -p 1234:80 40f5014f7503
