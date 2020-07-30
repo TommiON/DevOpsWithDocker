@@ -1,0 +1,5 @@
+docker pull devopsdockeruh/first_volume_exercise
+docker run 7ec953697e38
+docker stop 7ec953697e38
+touch logfile_1_8.txt
+docker run -v $(pwd)/logfile_1_8.txt:/usr/app/logs.txt 7ec953697e38
