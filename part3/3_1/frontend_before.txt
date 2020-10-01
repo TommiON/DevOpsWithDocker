@@ -1,0 +1,16 @@
+IMAGE               CREATED             CREATED BY                                      SIZE                COMMENT
+446026be737f        8 weeks ago         /bin/sh -c #(nop)  CMD ["npm" "start"]          0B                  
+bb0eb3548292        8 weeks ago         /bin/sh -c #(nop)  ENV API_URL=http://localh…   0B                  
+4421037298dc        8 weeks ago         /bin/sh -c #(nop)  EXPOSE 5000                  0B                  
+4472fb97dbd4        8 weeks ago         /bin/sh -c npm install                          405B                
+396e04fbade8        8 weeks ago         /bin/sh -c apt install -y nodejs                103MB               
+febe08d0d368        8 weeks ago         /bin/sh -c curl -sL https://deb.nodesource.c…   33.6MB              
+a7e8be42cff6        8 weeks ago         /bin/sh -c apt -y install curl                  16.2MB              
+78774a95b8cc        8 weeks ago         /bin/sh -c apt -y update && apt -y upgrade      41.9MB              
+82ab23c53366        8 weeks ago         /bin/sh -c #(nop) COPY dir:ed4c63543ae0bf7bc…   198MB               
+04e226e7c97e        8 weeks ago         /bin/sh -c #(nop) WORKDIR /mydir                0B                  
+c522ac0d6194        2 months ago        /bin/sh -c #(nop)  CMD ["/bin/bash"]            0B                  
+<missing>           2 months ago        /bin/sh -c mkdir -p /run/systemd && echo 'do…   7B                  
+<missing>           2 months ago        /bin/sh -c set -xe   && echo '#!/bin/sh' > /…   745B                
+<missing>           2 months ago        /bin/sh -c rm -rf /var/lib/apt/lists/*          0B                  
+<missing>           2 months ago        /bin/sh -c #(nop) ADD file:47805a69cb7dd669e…   126MB               
